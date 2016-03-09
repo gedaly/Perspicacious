@@ -1,0 +1,11 @@
+/*
+Theme Name:     Perspicacious
+Theme URI:      http://gedaly.com
+Description:    Child theme for Ponder, by Paul Jarvis: https://pjrvs.com/wordpress/
+Author:         Gedaly
+Author URI:     http://gedaly.com
+Template:       ponder
+Version:        0.1.0
+*/
+
+@import url("../ponder/style.css");
