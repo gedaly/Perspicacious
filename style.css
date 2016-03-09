@@ -4,8 +4,112 @@ Theme URI:      http://gedaly.com
 Description:    Child theme for Ponder, by Paul Jarvis: https://pjrvs.com/wordpress/
 Author:         Gedaly
 Author URI:     http://gedaly.com
-Template:       ponder
+Template:       nada
 Version:        0.1.0
 */
 
-@import url("../ponder/style.css");
+.wp-caption {}
+.sticky {}
+.gallery-caption {}
+.bypostauthor {}
+.wp-caption-text {}
+.screen-reader-text {}
+.alignright {}
+.alignleft {}
+.aligncenter {}
+.wp-caption { max-width: 100%; }
+
+
+* {border:none;outline:none;font-family: 'Lato',sans-serif;color:#333333;line-height: 1.5;}
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,figure,footer,header,hgroup,menu,nav,section,menu,time,mark,audio,video{background:transparent;border:0;font-size:100%;margin:0;outline:0;padding:0;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block}audio,canvas,video{display:inline;}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-size:100%}button,input,select,textarea{font-size:100%;line-height:normal!important;margin:0;vertical-align:middle}html input[type=button],input[type=reset],input[type=submit]{}img#wpstats{border:none;height:0;overflow:hidden;padding:0;width:0}.ir{background-repeat:no-repeat;direction:ltr;display:block;overflow:hidden;text-align:left;text-indent:-9999em}.hidden{display:none!important;visibility:hidden}.clearfix:before,.clearfix:after{content:" ";display:table}.clearfix:after{clear:both}.clearfix{}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{line-height:1.2}a:active,a:hover{outline:0}b,strong{font-weight:500}em{font-style:italic}li{list-style:none}small{font-size:100%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{-ms-interpolation-mode:bicubic;border:0;height:auto;vertical-align:middle}svg:not(:root){overflow:hidden}legend{border:0;margin-left:-7px;padding:0;white-space:normal}button,input{line-height:1}button,html input[type=button],input[type=reset],input[type=submit]{overflow:visible;vertical-align:top}button[disabled],input[disabled]{}input[type=checkbox],input[type=radio]{box-sizing:border-box;height:13px;padding:0;width:13px}input[type=search]{-moz-box-sizing:content-box;-webkit-appearance:textfield;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{}button::-moz-focus-inner,input[type=submit]::-moz-focus-inner{border:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}h1 a,h2 a,h3 a,h4 a,h5 a,h6 a,.h1 a,.h2 a,.h3 a,.h4 a,.h5 a,.h6 a,a{text-decoration:none}th,td{text-align:left;vertical-align:top}
+@media print{*{background:transparent!important;color:#000!important;text-shadow:none!important}body{background:#fff;color:#000;font:12pt Georgia, "Times New Roman", Times, serif;line-height:1.3}section.post-content a:after{content:" (" attr(href) ")"}tr,img{page-break-inside:avoid}img{border:0;max-width:100%!important}nav,aside{display:none}}
+
+
+::-moz-selection { background: rgba(23,25,26,.05); text-shadow: none; }
+::selection { background: rgba(23,25,26,.05); text-shadow: none; }
+
+body#tinymce.wp-editor { text-align: left; margin: 15px; height: auto; width: auto; background: #fff; }
+
+html { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
+body { text-align: center; font-size: 1em; font-weight: 300; background: #fff; }
+section { text-align: left; margin: 1em 1em 5em 1em; }
+footer p { color: #a0a9ae; font-size: .85em; }
+nav li, .menu li, #pagi a { display: inline-block; margin-right: 10px; }
+	nav li a, .menu li a, #pagi a { font-weight: 700; padding: 5px; text-decoration: none; transition: all .2s; display: inline-block; }
+	nav li a:hover, .menu li a:hover, #pagi a:hover { background: #a0a9ae; text-decoration: none; color: #fff; }
+	nav li.current_page_item a, nav li.current-menu-item a, nav li.current-post-ancestor a, nav li.current-menu-parent a, nav li.current-post-parent a { color: #a0a9ae; }
+
+.logo img { max-width: 130px; max-height: 30px; }
+
+p, ul, ol, body#tinymce.wp-editor p, body#tinymce.wp-editor ul, body#tinymce.wp-editor ol { margin-bottom: 1.1em; }
+
+h1, h2, h3, h4, h5, h6 { font-weight: 700; margin: .85em 0; font-family: 'Montserrat', sans-serif; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { text-decoration: none; }
+
+nav, form, .menu, .gallery { font-weight: 300; margin: .85em 0; font-size: 1em; }
+nav { margin-left: -5px; display: block; }
+
+small, article p.wp-caption-text, article .wp-caption-text, body#tinymce.wp-editor small, body#tinymce.wp-editor p.wp-caption-text { font-size: .85em; color: #a0a9ae; text-transform: uppercase; font-weight: 700; }
+article a, footer a, body#tinymce.wp-editor a { text-decoration: underline; font-size: inherit; font-weight: inherit; transition: color .2s; }
+a:hover, body#tinymce.wp-editor a:hover { color: #a0a9ae; }
+
+strong, b { font-weight: 700; }
+
+article::after { content: "· · ·"; text-align: center; display: block; margin: 2em 0 1em 0; color: #a0a9ae; font-size: .85em; }
+hr::after { content: "· · ·"; text-align: center; display: block; margin: 2em 0 2em 0; color: #a0a9ae; font-size: .85em; }
+
+article img, body#tinymce.wp-editor img { max-width: 100%; margin: 1em 0; display: block; }
+article blockquote, body#tinymce.wp-editor blockquote { margin-left: 1.5em; }
+article blockquote p, article blockquote p *, body#tinymce.wp-editor blockquote p { color: #a0a9ae; }
+article blockquote cite, body#tinymce.wp-editor blockquote cite { display: block; margin: 1em 0; color: #a0a9ae; font-size: .85em; font-style: normal; text-transform: uppercase;}
+article blockquote cite::before { content: "—"; }
+article iframe { width: 100%!important; max-width:100% !important; max-height: 394px; }
+
+article ul, article ol, body#tinymce.wp-editor ul, body#tinymce.wp-editor ol { margin-left: 3em; }
+article ul li, body#tinymce.wp-editor ul li { list-style: circle; margin-bottom: .6em; }
+article ol li, body#tinymce.wp-editor ol li { list-style: decimal-leading-zero; margin-bottom: .6em; }
+
+input, .button a, textarea { border: 2px solid #a0a9ae; padding: 8px; margin-bottom: 5px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 100%; transition: border .2s; text-decoration: none; display: inline-block; }
+.button a { text-align: center; padding: 9px 30px; margin: 1em auto; transition: background .2s; font-weight: 700; text-decoration: none !important; display: inline-block; }
+input:focus, input:hover { border: 2px solid #17191a; }
+
+button, input[type=submit] { background: #17191a; color: #fff; padding: 10px 30px; font-weight: 700; margin-bottom: 5px; width: 100%; transition: background .2s; cursor: pointer; border: none; }
+button:hover, .button a:hover { background: #a0a9ae; color: #fff !important; }
+button.button { border: none !important; }
+
+::-webkit-input-placeholder { color: #a0a9ae; }
+::-moz-placeholder { color: #a0a9ae; }
+:-ms-input-placeholder { color: #a0a9ae; }
+
+.gallery { margin: 0 auto 3em auto; }
+.gallery-item { float: left; text-align: center; width: 33%; }
+.gallery img { }
+.gallery-caption { }
+
+#menu-footer { margin-top: 4em; }
+
+@media screen and (min-width: 766px) {
+	body { padding-top: 50px; }
+	section { max-width: 700px; margin: 0 auto 40px auto; }
+	input { width: 60%; }
+	button, .button a, input[type=submit] { width: auto; }
+}
+
+@media screen and (min-width: 900px) {
+	body, p, h1, h2, h3, h4, h5, nav, form { font-size: 105%; }
+	section { max-width: 700px; }
+	h1 { font-size: 2.6em; }
+	h2 { font-size: 2.3em; }
+	h3 { font-size: 2em; }
+	h4 { font-size: 1.7em; }
+}
+
+@media screen and (min-width: 1200px) {
+	body, p, h1, h2, h3, h4, h5, nav, form { font-size: 110%; }
+	body, p, li { font-size: 1.2em;}
+	h1 { font-size: 2.7em; }
+	h2 { font-size: 2.4em; }
+	h3 { font-size: 2.1em; }
+	h4 { font-size: 1.8em; }
+}
