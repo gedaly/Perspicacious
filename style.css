@@ -113,3 +113,10 @@ button.button { border: none !important; }
 	h3 { font-size: 2.1em; }
 	h4 { font-size: 1.8em; }
 }
+
+.resume { font-size: .8em !important; }
+div.resume { font-size: 75% !important; }
+table.resume, .resume tr { width: 100%; }
+.resume td { width: 33%; }
+
+a img:hover { opacity: 0.7; transition: all .2s; }

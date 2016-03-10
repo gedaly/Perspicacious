@@ -1,5 +1,11 @@
 <?php
 
+function remove_nada_theme_font_style() {
+	wp_deregister_style( 'fonts-style' );
+	wp_dequeue_style( 'fonts-style' );
+}
+add_action( 'wp_enqueue_scripts', 'remove_nada_theme_font_style' );
+
 function perspicacious_theme_styles() {
 
 	wp_register_style( 'fonts-style-a', '//fonts.googleapis.com/css?family=Lato:300,300italic,700', array(), null, null );
@@ -12,8 +18,7 @@ function perspicacious_theme_styles() {
 
 add_action('wp_enqueue_scripts', 'perspicacious_theme_styles');
 
-wp_dequeue_style( 'fonts-style' );
-wp_deregister_style( 'fonts-style' );
+
 
 function register_my_menu() {
   register_nav_menu( 'secondary', __( 'Secondary Menu', 'perspicacious' ) );
