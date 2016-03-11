@@ -1,16 +1,17 @@
 <?php
 
 function remove_nada_theme_font_style() {
-	wp_deregister_style( 'fonts-style' );
-	wp_dequeue_style( 'fonts-style' );
+    remove_action( 'wp_enqueue_scripts', 'nada_theme_styles' );
 }
-add_action( 'wp_enqueue_scripts', 'remove_nada_theme_font_style' );
+
+add_action( 'after_setup_theme', 'remove_nada_theme_font_style' );
 
 function perspicacious_theme_styles() {
-
+  wp_register_style( 'perspicacious-style', get_stylesheet_uri() );
 	wp_register_style( 'fonts-style-a', '//fonts.googleapis.com/css?family=Lato:300,300italic,700', array(), null, null );
 	wp_register_style( 'fonts-style-b', '//fonts.googleapis.com/css?family=Montserrat:400,700', array(), null, null );
 
+  wp_enqueue_style( 'perspicacious-style' );
   wp_enqueue_style( 'fonts-style-a' );
 	wp_enqueue_style( 'fonts-style-b' );
 
